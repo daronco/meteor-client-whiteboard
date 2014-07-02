@@ -5,6 +5,5 @@
 
 standard-app-packages
 bootstrap
-streams
-router
 iron-router
+npm
