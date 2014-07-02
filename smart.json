@@ -3,6 +3,8 @@
     "redis": {},
     "npm": {},
     "bootstrap-3": {},
-    "iron-router": {}
+    "iron-router": {},
+    "streams": {},
+    "router": {}
   }
 }
