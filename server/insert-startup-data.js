@@ -91,5 +91,5 @@ CreateSeedData = function() {
   Meteor.Shapes.remove({});
   Meteor.Shapes.insert(line1);
   Meteor.Shapes.insert(line2);
-
+  Meteor.Whiteboard.insert({});
 }

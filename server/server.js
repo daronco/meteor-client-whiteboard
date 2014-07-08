@@ -1,4 +1,5 @@
 Meteor.Shapes = new Meteor.Collection("shapes");
+Meteor.Whiteboard = new Meteor.Collection("whiteboard");
 
 Meteor.startup(function () {
   console.log('server start');

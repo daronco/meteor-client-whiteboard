@@ -32,8 +32,6 @@ class @WhiteboardPaperModel
     @shiftPressed = false
     @currentPathCount = 0
 
-    @create()
-
     $(window).on "resize.whiteboard_paper", _.bind(@_onWindowResize, @)
     $(document).on "keydown.whiteboard_paper", _.bind(@_onKeyDown, @)
     $(document).on "keyup.whiteboard_paper", _.bind(@_onKeyUp, @)

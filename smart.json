@@ -5,6 +5,7 @@
     "bootstrap-3": {},
     "iron-router": {},
     "streams": {},
-    "router": {}
+    "router": {},
+    "raphaeljs-package" : { "git": "https://github.com/tomconnors/raphaeljs-package.git" }
   }
 }

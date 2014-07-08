@@ -7,7 +7,11 @@
       "bootstrap-3": {},
       "iron-router": {},
       "streams": {},
-      "router": {}
+      "router": {},
+      "raphaeljs-package": {
+        "git": "https://github.com/tomconnors/raphaeljs-package.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "redis": {
@@ -39,6 +43,11 @@
         "git": "https://github.com/tmeasday/meteor-router.git",
         "tag": "v0.6.1",
         "commit": "8ec75fec7affdefc787d19f23b36fd6d1d44ef04"
+      },
+      "raphaeljs-package": {
+        "git": "https://github.com/tomconnors/raphaeljs-package.git",
+        "branch": "master",
+        "commit": "85eaef3664ec063e4bcb81be1226d126d4d20539"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
