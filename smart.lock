@@ -7,7 +7,6 @@
       "bootstrap-3": {},
       "iron-router": {},
       "streams": {},
-      "router": {},
       "raphaeljs-package": {
         "git": "https://github.com/tomconnors/raphaeljs-package.git",
         "branch": "master"
@@ -39,11 +38,6 @@
         "tag": "v0.1.17",
         "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
       },
-      "router": {
-        "git": "https://github.com/tmeasday/meteor-router.git",
-        "tag": "v0.6.1",
-        "commit": "8ec75fec7affdefc787d19f23b36fd6d1d44ef04"
-      },
       "raphaeljs-package": {
         "git": "https://github.com/tomconnors/raphaeljs-package.git",
         "branch": "master",
@@ -53,16 +47,6 @@
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
-      },
-      "page-js-ie-support": {
-        "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
-        "tag": "v1.3.5",
-        "commit": "b99ed8380aefd10b2afc8f18d9eed4dd0d8ea9cb"
-      },
-      "HTML5-History-API": {
-        "git": "https://github.com/tmeasday/meteor-HTML5-History-API.git",
-        "tag": "v4.1.2",
-        "commit": "b5fca79f9ae8936e5f748a04f475295f4fa1cc7a"
       }
     }
   }

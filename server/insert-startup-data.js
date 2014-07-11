@@ -1,95 +1,76 @@
 CreateSeedData = function() {
-
-  line1 = {
-    "header":{
-      "destination":{
-        "to":"apps_channel"
-      },
-      "name":"whiteboard_draw_event",
-      "timestamp":"Fri, 20 Jun 2014 19:09:11 GMT",
-      "source":"bbb-apps"
+line1 = {
+    "payload": {
+        "whiteboard_id": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1",
+        "shape": {
+            "wb_id": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1",
+            "shape_type": "line",
+            "status": "DRAW_UPDATE",
+            "id": "jmvjhcf6p8hj-1-1405019109277",
+            "shape": {
+                "type": "line",
+                "status": "DRAW_UPDATE",
+                "points": [
+                    0.89795918367347,
+                    0.965986394557824,
+                    0.306122448979593,
+                    0.95238095238095
+                ],
+                "whiteboardId": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1",
+                "id": "jmvjhcf6p8hj-1-1405019109277",
+                "square": false,
+                "transparency": false,
+                "thickness": 88,
+                "color": 0
+            }
+        },
+        "meeting_id": "183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1405019094496",
+        "requester_id": "jmvjhcf6p8hj"
     },
-    "payload":{
-      "meeting":{
-        "name":"someMeetingName",
-        "id":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1389108951916"
-      },
-      "session":"someSessionId",
-      "whiteboard_id":"presentation_id/page_num",
-      "shape_id":"q779ogycfmxk-13-1383262166102",
-      "shape_type":"line",
-      "data":{
-        "coordinate":{
-          "first_x":0.016025641025641028,
-          "first_y":0.982905982905983,
-          "last_x":0.33,
-          "last_y":0.45
-        },
-        "line":{
-          "line_type":"solid",
-          "color":0
-        },
-        "weight":18,
-        "background":{
-          "visible":true,
-          "color":0,
-          "alpha":1
-        },
-        "square":false
-      },
-      "by":{
-        "id":"user1",
-        "name":"Guga"
-      }
+    "header": {
+        "timestamp": 81104812,
+        "name": "send_whiteboard_shape_message",
+        "version": "0.0.1"
     }
-  }
+}
 
-  line2 = {
-    "header":{
-      "destination":{
-        "to":"apps_channel"
-      },
-      "name":"whiteboard_draw_event",
-      "timestamp":"Fri, 20 Jun 2014 19:09:11 GMT",
-      "source":"bbb-apps"
+line2 = {
+    "payload": {
+        "whiteboard_id": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1",
+        "shape": {
+            "wb_id": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1",
+            "shape_type": "rectangle",
+            "status": "DRAW_UPDATE",
+            "id": "jmvjhcf6p8hj-1-1405019109277",
+            "shape": {
+                "type": "rectangle",
+                "status": "DRAW_UPDATE",
+                "points": [
+                    0.89795918367347,
+                    0.965986394557824,
+                    0.306122448979593,
+                    0.95238095238095
+                ],
+                "whiteboardId": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1",
+                "id": "jmvjhcf6p8hj-1-1405019109277",
+                "square": false,
+                "transparency": false,
+                "thickness": 88,
+                "color": 0
+            }
+        },
+        "meeting_id": "183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1405019094496",
+        "requester_id": "jmvjhcf6p8hj"
     },
-    "payload":{
-      "meeting":{
-        "name":"someMeetingName",
-        "id":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1389108951916"
-      },
-      "session":"someSessionId",
-      "whiteboard_id":"presentation_id/page_num",
-      "shape_id":"q779ogycfmxk-13-1383262166102",
-      "shape_type":"line",
-      "data":{
-        "coordinate":{
-          "first_x":0.016025641025641028,
-          "first_y":0.982905982905983,
-          "last_x":0.33,
-          "last_y":0.45
-        },
-        "line":{
-          "line_type":"solid",
-          "color":0
-        },
-        "weight":18,
-        "background":{
-          "visible":true,
-          "color":0,
-          "alpha":1
-        },
-        "square":false
-      },
-      "by":{
-        "id":"user1",
-        "name":"Guga"
-      }
+    "header": {
+        "timestamp": 81104812,
+        "name": "send_whiteboard_shape_message",
+        "version": "0.0.1"
     }
-  }
+}
 
   Meteor.Shapes.remove({});
-  Meteor.Shapes.insert(line1);
+  // Meteor.Shapes.insert(line1);
   Meteor.Shapes.insert(line2);
   Meteor.Whiteboard.insert({});
 }
