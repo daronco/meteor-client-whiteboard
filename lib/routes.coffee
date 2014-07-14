@@ -2,8 +2,12 @@ Router.map ->
   @route 'main',
     path: "/"
     action: ->
-      Meteor.subscribe('shapes') #move it to onStartup - when the client starts
-      # alert "start drawing"
+      @redirect('/abc')
+      Meteor.subscribe 'shapes'
+      
+      #Meteor.Shapes.remove({})
+      #Meteor.subscribe('shapes') #move it to onStartup - when the client starts
+      
       # shapes = Meteor.Shapes.find().fetch()
       # alert "we are dealing with " + shapes.length + " shapes"
       # aContainer = document.createElement('div')
@@ -20,3 +24,9 @@ Router.map ->
       #   wpm.updateShape(shapeType, data)
 
       #'whiteboard'
+
+  @route 'drawing',
+    path: "/abc"
+    action: ->
+      console.log "at the moment of the subscription for Shapes we have: " + Meteor.Shapes.find().count()
+
