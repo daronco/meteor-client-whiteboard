@@ -1,9 +1,7 @@
 Meteor.methods
   hardcodeCollection: ->
     line1 =
-      a: "aa"
-      b: "bb"
-    ###"payload":
+    "payload":
       "whiteboard_id": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1"
       "shape":
         "wb_id": "d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1405019094508/1"
@@ -30,7 +28,7 @@ Meteor.methods
     "header":
       "timestamp": 81104812
       "name": "send_whiteboard_shape_message"
-      "version": "0.0.1"###
+      "version": "0.0.1"
 
     id = Meteor.Shapes.insert(shape: line1)
     console.log "just inserted a shape:" + id
