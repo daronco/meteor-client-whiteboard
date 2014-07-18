@@ -3,5 +3,23 @@
 </head>
 <body>
   <!-- Where router render the content -->
-  {{> renderPage}}
+  {{> whiteboard}}
 </body>
+
+<template name='whiteboard'>
+  <div id='header'>
+    <div id='heading'>
+      <h1>Whiteboard</h1>
+      <input type="button" class="drawShapes" value="Draw!" />
+    </div>
+  </div>
+  <div id='messages'>
+    {{#each shapes}}
+      {{shape.header.name}}: {{shape.payload.shape.shape_type}}
+    {{/each}}
+  </div>
+
+  <div id="whiteboard-paper">
+  </div>
+
+</template>

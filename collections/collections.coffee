@@ -1,0 +1,1 @@
+Meteor.Shapes = new Meteor.Collection("shapes")
