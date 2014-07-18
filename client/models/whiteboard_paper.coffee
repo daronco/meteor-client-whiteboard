@@ -1,9 +1,12 @@
 # "Paper" which is the Raphael term for the entire SVG object on the webpage.
 # This class deals with this SVG component only.
 class @WhiteboardPaperModel
+  jaja: () ->
+    alert("jaja")
 
   # Container must be a DOM element
   constructor: (@container) ->
+    alert "paper in WhiteboardPaperModel =" + @container
     # a WhiteboardCursorModel
     @cursor = null
 
@@ -341,6 +344,7 @@ class @WhiteboardPaperModel
   # Updated a shape `shape` with the data in `data`.
   # TODO: check if the objects exist before calling update, if they don't they should be created
   updateShape: (shape, data) ->
+    alert "updating a " + shape
     switch shape
       when "line"
         @currentLine.update(data)
@@ -357,6 +361,7 @@ class @WhiteboardPaperModel
 
   # Make a shape `shape` with the data in `data`.
   makeShape: (shape, data) ->
+    alert "making a " + shape
     tool = null
     switch shape
       when "path", "line"
